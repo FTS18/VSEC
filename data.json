@@ -1,0 +1,450 @@
+{
+    "class1": {
+        "syllabus": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/may/May%20Test%20Cl.%201.pdf"
+            },
+            {
+                "name": "July",
+                "url": "https://vsecnblock.com/syllabus/July/Cl.1%20(July).pdf"
+            },
+            {
+                "name": "Yearly",
+                "url": "https://vsecnblock.com/syllabus/Yearly_Syllabus_Cl.1.pdf"
+            }
+        ],
+        "holidayHomework": [
+            {
+                "name": "Summer",
+                "url": "https://vsecnblock.com/syllabus/Homework/CLASS%201.pdf"
+            },
+            {
+                "name": "Winter",
+                "url": "coming-soon.html"
+            }
+        ],
+        "datesheet": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/MAY%20TEST%201-8.pdf"
+            },
+            {
+                "name": "July",
+                "url": "https://vsecnblock.com/syllabus/JULY%20TEST%20DATESHEET.pdf"
+            }
+        ]
+    },
+    "class2": {
+        "syllabus": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/may/May%20Test%20Cl.%202.pdf"
+            },
+            {
+                "name": "July",
+                "url": "https://vsecnblock.com/syllabus/July/Cl.2%20(July).pdf"
+            },
+            {
+                "name": "Yearly",
+                "url": "https://vsecnblock.com/syllabus/Yearly_Syllabus_Cl.2.pdf"
+            }
+        ],
+        "holidayHomework": [
+            {
+                "name": "Summer",
+                "url": "https://vsecnblock.com/syllabus/Homework/CLASS%202.pdf"
+            },
+            {
+                "name": "Winter",
+                "url": "coming-soon.html"
+            }
+        ],
+        "datesheet": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/MAY%20TEST%201-8.pdf"
+            },
+            {
+                "name": "July",
+                "url": "https://vsecnblock.com/syllabus/JULY%20TEST%20DATESHEET.pdf"
+            }
+        ]
+    },
+    "class3": {
+        "syllabus": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/may/May%20Test%20Cl.%203.pdf"
+            },
+            {
+                "name": "July",
+                "url": "https://vsecnblock.com/syllabus/July/Cl.3%20(July).pdf"
+            },
+            {
+                "name": "Yearly",
+                "url": "https://vsecnblock.com/syllabus/Yearly_Syllabus_Cl.3.pdf"
+            }
+        ],
+        "holidayHomework": [
+            {
+                "name": "Summer",
+                "url": "https://vsecnblock.com/syllabus/Homework/CLASS%203.pdf"
+            },
+            {
+                "name": "Winter",
+                "url": "coming-soon.html"
+            }
+        ],
+        "datesheet": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/MAY%20TEST%201-8.pdf"
+            },
+            {
+                "name": "July",
+                "url": "https://vsecnblock.com/syllabus/JULY%20TEST%20DATESHEET.pdf"
+            }
+        ]
+    },
+    "class4": {
+        "syllabus": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/may/May%20Test%20Cl.%204.pdf"
+            },
+            {
+                "name": "July",
+                "url": "https://vsecnblock.com/syllabus/July/Cl.4%20(July).pdf"
+            },
+            {
+                "name": "Yearly",
+                "url": "https://vsecnblock.com/syllabus/Yearly_Syllabus_Cl.4.pdf"
+            }
+        ],
+        "holidayHomework": [
+            {
+                "name": "Summer",
+                "url": "https://vsecnblock.com/syllabus/Homework/CLASS%204.pdf"
+            },
+            {
+                "name": "Winter",
+                "url": "coming-soon.html"
+            }
+        ],
+        "datesheet": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/MAY%20TEST%201-8.pdf"
+            },
+            {
+                "name": "July",
+                "url": "https://vsecnblock.com/syllabus/JULY%20TEST%20DATESHEET.pdf"
+            }
+        ]
+    },
+    "class5": {
+        "syllabus": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/may/May%20Test%20Cl.%205.pdf"
+            },
+            {
+                "name": "July",
+                "url": "https://vsecnblock.com/syllabus/July/Cl.5%20(July).pdf"
+            },
+            {
+                "name": "Yearly",
+                "url": "https://vsecnblock.com/syllabus/Yearly_Syllabus_Cl.5.pdf"
+            }
+        ],
+        "holidayHomework": [
+            {
+                "name": "Summer",
+                "url": "https://vsecnblock.com/syllabus/Homework/CLASS%205.pdf"
+            },
+            {
+                "name": "Winter",
+                "url": "coming-soon.html"
+            }
+        ],
+        "datesheet": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/MAY%20TEST%201-8.pdf"
+            },
+            {
+                "name": "July",
+                "url": "https://vsecnblock.com/syllabus/JULY%20TEST%20DATESHEET.pdf"
+            }
+        ]
+    },
+    "class6": {
+        "syllabus": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/may/May%20Test%20Cl.%206.pdf"
+            },
+            {
+                "name": "July",
+                "url": "https://vsecnblock.com/syllabus/July/Cl.6%20(July).pdf"
+            },
+            {
+                "name": "Yearly",
+                "url": "https://vsecnblock.com/syllabus/Yearly_Syllabus_Cl.6.pdf"
+            }
+        ],
+        "holidayHomework": [
+            {
+                "name": "Summer",
+                "url": "https://vsecnblock.com/syllabus/Homework/CLASS%206.pdf"
+            },
+            {
+                "name": "Winter",
+                "url": "coming-soon.html"
+            }
+        ],
+        "datesheet": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/MAY%20TEST%201-8.pdf"
+            },
+            {
+                "name": "July",
+                "url": "https://vsecnblock.com/syllabus/JULY%20TEST%20DATESHEET.pdf"
+            }
+        ]
+    },
+    "class7": {
+        "syllabus": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/may/May%20Test%20Cl.%207.pdf"
+            },
+            {
+                "name": "July",
+                "url": "https://vsecnblock.com/syllabus/July/Cl.7%20(July).pdf"
+            },
+            {
+                "name": "Yearly",
+                "url": "https://vsecnblock.com/syllabus/Yearly_Syllabus_Cl.7.pdf"
+            }
+        ],
+        "holidayHomework": [
+            {
+                "name": "Summer",
+                "url": "https://vsecnblock.com/syllabus/Homework/CLASS%207.pdf"
+            },
+            {
+                "name": "Winter",
+                "url": "coming-soon.html"
+            }
+        ],
+        "datesheet": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/MAY%20TEST%201-8.pdf"
+            },
+            {
+                "name": "July",
+                "url": "https://vsecnblock.com/syllabus/JULY%20TEST%20DATESHEET.pdf"
+            }
+        ]
+    },
+    "class8": {
+        "syllabus": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/may/May%20Test%20Cl.%208.pdf"
+            },
+            {
+                "name": "July",
+                "url": "https://vsecnblock.com/syllabus/July/Cl.8%20(July).pdf"
+            },
+            {
+                "name": "Yearly",
+                "url": "https://vsecnblock.com/syllabus/Yearly_Syllabus_Cl.8.pdf"
+            }
+        ],
+        "holidayHomework": [
+            {
+                "name": "Summer",
+                "url": "https://vsecnblock.com/syllabus/Homework/CLASS%208.pdf"
+            },
+            {
+                "name": "Winter",
+                "url": "coming-soon.html"
+            }
+        ],
+        "datesheet": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/MAY%20TEST%201-8.pdf"
+            },
+            {
+                "name": "July",
+                "url": "https://vsecnblock.com/syllabus/JULY%20TEST%20DATESHEET.pdf"
+            }
+        ]
+    },
+    "class9": {
+        "syllabus": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/may/May%20Test%20Cl.%209.pdf"
+            },
+            {
+                "name": "August",
+                "url": "https://vsecnblock.com/syllabus/August/IX.pdf"
+            },
+            {
+                "name": "Yearly",
+                "url": "https://vsecnblock.com/syllabus/Yearly_Syllabus_Cl.9.pdf"
+            }
+        ],
+        "holidayHomework": [
+            {
+                "name": "Summer",
+                "url": "https://vsecnblock.com/syllabus/Homework/CLASS%209.pdf"
+            },
+            {
+                "name": "Winter",
+                "url": "coming-soon.html"
+            }
+        ],
+        "datesheet": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/MAY%20TEST%209-12.pdf"
+            },
+            {
+                "name": "August",
+                "url": "https://vsecnblock.com/syllabus/AUGUST/August%20Test%20Date%20Sheet%20Cl.%209-12.pdf"
+            }
+        ]
+    },
+    "class10": {
+        "syllabus": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/may/May%20Test%20Cl.%2010.pdf"
+            },
+            {
+                "name": "August",
+                "url": "https://vsecnblock.com/syllabus/August/X.pdf"
+            },
+            {
+                "name": "Yearly",
+                "url": "https://vsecnblock.com/syllabus/Yearly_Syllabus_Cl.10.pdf"
+            }
+        ],
+        "holidayHomework": [
+            {
+                "name": "Summer",
+                "url": "https://vsecnblock.com/syllabus/Homework/CLASS%2010.pdf"
+            },
+            {
+                "name": "Winter",
+                "url": "coming-soon.html"
+            }
+        ],
+        "datesheet": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/MAY%20TEST%209-12.pdf"
+            },
+            {
+                "name": "August",
+                "url": "https://vsecnblock.com/syllabus/AUGUST/August%20Test%20Date%20Sheet%20Cl.%209-12.pdf"
+            }
+        ]
+    },
+    "class11PCM": {
+        "syllabus": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/may/May%20Test%20Cl.%2011.pdf"
+            },
+            {
+                "name": "August",
+                "url": "https://vsecnblock.com/syllabus/AUGUST/XI-SCIENCE.pdf"
+            }
+        ],
+        "datesheet": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/MAY%20TEST%209-12.pdf"
+            },
+            {
+                "name": "August",
+                "url": "https://vsecnblock.com/syllabus/AUGUST/August%20Test%20Date%20Sheet%20Cl.%209-12.pdf"
+            }
+        ]
+    },
+    "class11Commerce": {
+        "syllabus": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/may/May%20Test%20Cl.%2011.pdf"
+            },
+            {
+                "name": "August",
+                "url": "https://vsecnblock.com/syllabus/AUGUST/XI-COMMERCE.pdf"
+            }
+        ],
+        "datesheet": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/MAY%20TEST%209-12.pdf"
+            },
+            {
+                "name": "August",
+                "url": "https://vsecnblock.com/syllabus/AUGUST/August%20Test%20Date%20Sheet%20Cl.%209-12.pdf"
+            }
+        ]
+    },
+    "class12PCM": {
+        "syllabus": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/may/May%20Test%20Cl.%2012.pdf"
+            },
+            {
+                "name": "August",
+                "url": "https://vsecnblock.com/syllabus/AUGUST/XII-%20SCIENCE.pdf"
+            }
+        ],
+        "datesheet": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/MAY%20TEST%209-12.pdf"
+            },
+            {
+                "name": "August",
+                "url": "https://vsecnblock.com/syllabus/AUGUST/August%20Test%20Date%20Sheet%20Cl.%209-12.pdf"
+            }
+        ]
+    },
+    "class12Commerce": {
+        "syllabus": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/may/May%20Test%20Cl.%2012.pdf"
+            },
+            {
+                "name": "August",
+                "url": "https://vsecnblock.com/syllabus/AUGUST/XII-%20COMMERCE.pdf"
+            }
+        ],
+        "datesheet": [
+            {
+                "name": "May",
+                "url": "https://vsecnblock.com/syllabus/MAY%20TEST%209-12.pdf"
+            },
+            {
+                "name": "August",
+                "url": "https://vsecnblock.com/syllabus/AUGUST/August%20Test%20Date%20Sheet%20Cl.%209-12.pdf"
+            }
+        ]
+    }
+}
