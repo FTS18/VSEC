@@ -311,7 +311,93 @@ main{
 .juniors,.seniors,.sat{
   font-size: 1.2rem;
   font-weight: 900;
+}.dropdown {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
+/* Styling for the dropdowns */
+
+.content{
+  columns: 4; 
+}
+
+#classDropdown,
+#categoryDropdown,
+#streamDropdown,
+#monthDropdown {
+  position: relative;
+  top: 0px;
+  left: 0;
+  padding: 8px 16px;
+  font-size: 16px;
+  background: #111;
+  height: 50px;
+  color: #eee;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+#classDropdown{
+  top: -20px;
+}
+.drp{
+  width: 100%;
+  
+}
+
+
+#classDropdown:focus,
+#categoryDropdown:focus,
+#streamDropdown:focus,
+#monthDropdown:focus {
+  outline: none;
+  box-shadow: 0 0 40px #222;
+}
+
+/* Styling for the pdf links */
+.pdf-link {
+  display: block;
+  top: 10px;
+  left: -8px;
+  width: 100%;
+  position: relative;
+  font-size: 16px;
+  background-color: #d8d8d8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}.pdf-link.disabled{
+  background: #363636;
+  border: 2px solid#2e2e2e;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.pdf-link.disabled:hover {
+  background-color: #202020;
+}
+
+.pdf-link:hover {
+  background-color: #9b9b9b;
+}
+#pdfViewer {
+  margin-top: 20px;
+}
+
+.pdf-link {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  margin-top: 30px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .menu-list {
       width: 60%;
@@ -432,17 +518,17 @@ main{
   }
   .link{
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 15px;
     width: auto;
     text-decoration: none;
     color: #eee;
     font-size: 12px;
-    background: #333;
+    background: #222;
     font-family: "Raleway";
     line-height: 20px;
     transition: 0.2s ease-in-out;
     border-radius: 50px;
-    border: 0;
+    border: 2px solid #313131;
     margin-right: 4px;
     margin-left: 4px;
   }.links {
@@ -458,6 +544,7 @@ main{
   .link:hover{
     background: #eee;
     color: #03000c;
+    border: 1px solid #eee;
   }
   .notice-slide{
     position: absolute;

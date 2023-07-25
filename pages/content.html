@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>VSEC | N Block</title>
+        <meta name="description" content>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <div class="logo">
+                        <img src="../assets/img/vsec.gif" alt>
+                        <h1>Dr Virendra Swarup Education Centre</h1></div>
+                    <ul class="menu-list">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="/notices.html">Notice</a></li>
+                        <li><a href="/gallery.html">Gallery</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="https://www.vsecnblock.com/ccav/">Pay Fee</a></li>
+                    </ul>
+                    <div class="humbarger" onclick="toggleMenu()">
+                        <div class="bar"></div>
+                        <div class="bar2 bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="banner">
+            <img src="../assets/img/1.webp" alt>
+            <marquee class="notice-slide" direction="ltr">Lorem ipsum dolor, sit
+                amet consectetur adipisicing elit. Omnis impedit, eaque est
+                excepturi aliquam ipsa explicabo perferendis minus, sunt
+                laudantium molestias tenetur dolorum totam deserunt qui incidunt
+                nihil? Voluptas officia error eligendi laudantium laborum rerum
+                maiores, magni facere nisi ipsa repellendus similique maxime
+                neque assumenda voluptatem inventore nihil. Sed, numquam.</marquee>
+            <div class="page-head">
+                <div class="links">
+                    <a href="../index.html" class="link">Home</a>
+                    <a
+                        href="https://vsecnblock.com/Mandatory%20Disclosure%20Details%20_%20SARAS%204.0.pdf"
+                        class="link">Saras</a>
+                    <a href="#syllabus" class="link">Syllabus</a>
+                    <a href="#notices" class="link">Notices</a>
+                    <a href="#datesheet" class="link">Datesheet</a>
+                    <a href="../index.html#timings" class="link">Timings</a>
+                </div>
+                <div class="title">DATESHEETS/ SYLLABUS/ HOLIDAY HOMEWORK </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="search-wrapper">
+                <input class="searchbox" placeholder="Search here..."
+                    type="search">
+                <div class="results"></div>
+            </div>
+            <div class="content-wrapper">
+                <a href="#holiday-homework" class="card top lt">
+                    <img src="../assets/icons/hhw.png" alt>
+                    <div class="card-text">Holiday HW</div>
+                </a>
+                <a href="#notices" class="card top rt">
+                    <img src="../assets/icons/trending1.png" alt>
+                    <div class="card-text">Notices</div>
+                </a>
+                <a href="#syllabus" class="card bot lt">
+                    <img src="../assets/icons/syllabus.png" alt>
+                    <div class="card-text">Syllabus</div>
+                </a>
+                <a href="https://www.vsecnblock.com/ccav/" class="card bot rt">
+                    <img src="../assets/icons/pay.png" alt>
+                    <div class="card-text">Pay Fees</div>
+                </a>
+            </div>
+        </div>
+        <main>
+            <section class="info"id="syllabus">
+                <div class="info-title"id="holiday-homework" >Pick Class:</div>
+                <div class="more-info content">
+                    <div class="dropdown">
+                        <select id="classDropdown" class="drp">
+                            <option value>Select Class</option>
+                            <option value="class1">Class 1</option>
+                            <option value="class2">Class 2</option>
+                            <option value="class3">Class 3</option>
+                            <option value="class4">Class 4</option>
+                            <option value="class5">Class 5</option>
+                            <option value="class6">Class 6</option>
+                            <option value="class7">Class 7</option>
+                            <option value="class8">Class 8</option>
+                            <option value="class9">Class 9</option>
+                            <option value="class10">Class 10</option>
+                            <option value="class11PCM">Class 11 PCM</option>
+                            <option value="class11Commerce">Class 11 Commerce</option>
+                            <option value="class12PCM">Class 12 PCM</option>
+                            <option value="class12Commerce">Class 12 Commerce</option>
+                        </select>
+                    </div>
+
+                    <div id="categoryDiv" disabled>
+                        <select id="categoryDropdown" disabled class="drp">
+                            <option value>Select Category</option>
+                            <option value="syllabus">Syllabus</option>
+                            <option value="holidayHomework">Holiday Homework</option>
+                            <option value="datesheet">Datesheet</option>
+                        </select>
+                    </div>
+
+                    <div id="monthDiv" >
+                        <select id="monthDropdown" class="drp" disabled>
+                            <option value>Select Month</option>
+                        </select>
+                    </div>
+
+                    <div id="pdfViewer">
+                        <a href="#" class="pdf-link disabled">Download</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+        <script src="../assets/js/app.js"></script>
+    </body>
+</html>
