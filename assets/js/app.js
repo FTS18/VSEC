@@ -91,3 +91,9 @@ fetch('../data.json')
     });
   })
   .catch(error => console.error('Error fetching data:', error));
+  //Slide Up on Page Load
+  slideTimer = setInterval(function() {
+      $('.loading-screen').slideUp();
+      $('body').removeClass('disabledScroll');
+  }, 1550); //3500
+  
