@@ -99,4 +99,4 @@ fetch('../data.json')
   
 const currentYear = new Date().getFullYear();
 const footer = document.getElementById('copyright');
-footer.textContent = `Copyright © ${currentYear}, Dr. Virendra Swarup Education Center`;
+footer.textContent = `Copyright © ${currentYear}, Ananay Dubey`;
