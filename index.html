@@ -22,15 +22,16 @@
         <header>
             <nav>
                 <div class="nav-container">
-                    <div class="logo">
+                    <a href="/index.html" class="logo">
                         <img src="assets/img/vsec.gif" alt>
-                        <h1>Dr Virendra Swarup Education Centre</h1></div>
+                        <h1>Dr Virendra Swarup Education Centre</h1>
+                    </a>
                     <ul class="menu-list">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="pages/content.html#syllabus">Syllabus</a></li>
+                        <li><a href="#about" onclick="toggleMenu()" >About</a></li>
+                        <li><a href="/pages/content.html#syllabus">Syllabus</a></li>
                         <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/pages/contact.html">Contact</a></li>
                         <li><a href="https://www.vsecnblock.com/ccav/">Pay Fee</a></li>
                     </ul>
                     <div class="humbarger" onclick="toggleMenu()">
@@ -43,16 +44,7 @@
         </header>
         <div class="banner">
             <img src="assets/img/4.webp" alt>
-            <marquee class="notice-slide" direction="ltr">Lorem ipsum dolor, sit
-                amet consectetur adipisicing elit. Omnis impedit, eaque est
-                excepturi aliquam ipsa explicabo perferendis minus, sunt
-                laudantium
-                molestias tenetur dolorum totam deserunt qui incidunt nihil?
-                Voluptas officia error eligendi laudantium laborum rerum
-                maiores,
-                magni facere nisi ipsa repellendus similique maxime neque
-                assumenda
-                voluptatem inventore nihil. Sed, numquam.</marquee>
+            <marquee class="notice-slide" direction="ltr">We provide comprehensive, values-based education, nurturing potential. Our environment fosters growth in mind and character. Dedicated educators mentor self-discovery and skills. With modern facilities, we prepare students for excellence and life skills. We prioritize empathy, integrity, and citizenship. Through sports, we promote well-being, recognizing its link to a sharp mind. Our values-based education instills purpose, shaping confident, compassionate individuals for future challenges.</marquee>
             <div class="page-head">
                 <div class="links">
                     <a
@@ -104,31 +96,8 @@
             <section class="info">
                 <div class="info-title" id="about">About Us:</div>
                 <div class="more-info">
-                    <div class="info-desc">At Dr. VSEC, we are <span>committed</span>
-                        to delivering a holistic, values-based education that
-                        recognizes the <span>unique</span> potential within each
-                        child. Our caring and creative environment fosters <span>emotional,
-                            social, and intellectual</span> growth, while our
-                        dedicated educators serve as mentors, guiding students
-                        on
-                        their journey of <span>self-discovery</span> and skill
-                        development. With modern facilities and technology
-                        integration, we prepare students for academic excellence
-                        and
-                        equip them with <span> life skills</span>. Emphasizing
-                        empathy, compassion, and integrity, we aim to cultivate
-                        <span>responsible</span> and <span>caring</span>
-                        citizens
-                        who positively impact society. We also promote physical
-                        well-being through <span>sports</span> and activities,
-                        understanding the crucial connection between a healthy
-                        body
-                        and a sharp mind. Our <span>values-based education</span>
-                        instills a sense of purpose and ethical awareness,
-                        shaping
-                        <span>confident</span>, compassionate, and well-rounded
-                        individuals who are ready to navigate the <span>challenges</span>
-                        of the future.
+                    <div class="info-desc">At <span>Dr. VSEC</span>, we provide holistic, values-based education, nurturing each child's potential. Our caring environment fosters growth in emotional, social, and intellectual aspects. Dedicated educators serve as mentors, guiding <span>self-discovery</span> and skill development. With modern facilities and technology, we prepare students for academic excellence and life skills. Emphasizing <span>empathy</span>, <span>compassion</span>, and <span>integrity</span>, we cultivate responsible citizens who positively impact society. We promote physical well-being through sports, recognizing the connection between a healthy body and a sharp mind. Our values-based education instills <span>purpose</span> and ethical awareness, shaping <span>confident</span>, <span>compassionate</span>, and well-rounded individuals prepared for future challenges.
+                        <br><span>VSEF</span>, founded in Kanpur to honor Dr. Virendra Swarup's educational legacy. We've established diverse educational institutions in Uttar Pradesh, including <span>Post-Graduate Colleges</span> and more. In Kanpur, an education hub, we offer various programs. We're also proud to operate in <span>Unnao</span> and <span>Bachrawan</span>, Raibarieli district.
                     </div>
                 </div>
             </section>
@@ -165,7 +134,7 @@
                     </div>
                 </div>
             </section>
-            <footer>Copyright © 2023, Dr. Virendra Swarup Education Center</footer>
+            <footer id="copyright">Copyright © 2023, Dr. Virendra Swarup Education Center</footer>
         </main>
         <script src="assets/js/app.js"></script>
     </body>

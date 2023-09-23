@@ -97,3 +97,6 @@ fetch('../data.json')
       $('body').removeClass('disabledScroll');
   }, 1550); //3500
   
+const currentYear = new Date().getFullYear();
+const footer = document.getElementById('copyright');
+footer.textContent = `Copyright © ${currentYear}, Dr. Virendra Swarup Education Center`;
