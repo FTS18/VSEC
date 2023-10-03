@@ -109,7 +109,7 @@
         </main>
         <script src="assets/js/app.js"></script>
         <script>
-            fetch("/.netlify/functions/viewerCount")
+            fetch("/.netlify/functions/viewerCount.js")
               .then((response) => response.json())
               .then((data) => {
                 const viewerCount = data.count;
