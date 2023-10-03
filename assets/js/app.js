@@ -1,4 +1,3 @@
-
 function toggleMenu() {
   var menu = document.querySelector('.menu-list');
   menu.classList.toggle('active');
@@ -7,8 +6,6 @@ function toggleMenu() {
 fetch('../data.json')
   .then(response => response.json())
   .then(pdfData => {
-
-
     const classDropdown = document.getElementById("classDropdown");
     const categoryDiv = document.getElementById("categoryDiv");
     const categoryDropdown = document.getElementById("categoryDropdown");
@@ -74,29 +71,108 @@ fetch('../data.json')
       });
     }
 
-    monthDropdown.addEventListener("change", function () {
+    const downloadLink = document.getElementById("downloadLink");
+    const printButton = document.getElementById("printButton");
+
+    printButton.addEventListener("click", function () {
+      const selectedMonth = monthDropdown.value;
+      if (selectedMonth) {
+        const pdfWindow = window.open(selectedMonth);
+        pdfWindow.print();
+      }
+    });monthDropdown.addEventListener("change", function () {
       const selectedMonth = monthDropdown.value;
       if (selectedMonth) {
         pdfViewer.innerHTML = "";
+    
+        // Create a download link
         const pdfLink = document.createElement("a");
         pdfLink.className = "pdf-link";
         pdfLink.href = selectedMonth;
         pdfLink.target = "_blank";
         pdfLink.textContent = "Download";
-        pdfLink.classList.remove("disabled")
+    
+        // Create a print button
+        const printButton = document.createElement("a");
+        printButton.className = "pdf-link";
+        printButton.textContent = "Print";
+        printButton.addEventListener("click", function () {
+          // Open the selected PDF in a new tab for printing
+          window.open(selectedMonth, "_blank");
+        });
+    
+        // Append both download and print options
         pdfViewer.appendChild(pdfLink);
+        pdfViewer.appendChild(printButton);
       } else {
         pdfViewer.innerHTML = "";
       }
-    });
+    });    
   })
-  .catch(error => console.error('Error fetching data:', error));
-  //Slide Up on Page Load
-  slideTimer = setInterval(function() {
-      $('.loading-screen').slideUp();
-      $('body').removeClass('disabledScroll');
-  }, 1550); //3500
-  
+  .catch(error => console.error(error));
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sidebarContainer = document.querySelector(".sidebar");
+  fetch("../assets/components/sidebar.html")
+    .then(response => response.text())
+    .then(content => {
+      sidebarContainer.innerHTML = content;
+    })
+    .catch(error => {
+      console.error("Error fetching sidebar content:", error);
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const headerContainer = document.querySelector("header .nav-container");
+  fetch("../assets/components/navbar.html")
+    .then(response => response.text())
+    .then(content => {
+      headerContainer.insertAdjacentHTML("beforeend", content);
+    })
+    .catch(error => {
+      console.error("Error fetching navbar content:", error);
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const imageContainer = document.getElementById("image-container");
+  fetch("gallery.json")
+    .then(response => response.json())
+    .then(data => {
+      data.forEach(item => {
+        const imgElement = document.createElement("img");
+        imgElement.src = item.src;
+        imgElement.alt = item.alt;
+        const itemDiv = document.createElement("div");
+        itemDiv.classList.add("item");
+        itemDiv.appendChild(imgElement);
+        imageContainer.appendChild(itemDiv);
+      });
+    })
+    .catch(error => {
+      console.error("Error fetching gallery data:", error);
+    });
+});
+
 const currentYear = new Date().getFullYear();
 const footer = document.getElementById('copyright');
 footer.textContent = `Copyright © ${currentYear}, Ananay Dubey`;
+document.addEventListener("DOMContentLoaded", function () {
+
+  gsap.to(".barr", 1.2, {
+    delay: 0.5,
+    height: 0,
+    stagger: {
+      amount: 0.4,
+    }, ease: "power1.inOut",
+  })
+  const themeToggle = document.getElementById("themeToggle");
+  const body = document.body;
+  themeToggle.addEventListener("click", function () {
+    body.classList.toggle("dark-theme");
+    body.classList.toggle("light-theme");
+    const currentTheme = body.classList.contains("dark-theme") ? "Light" : "Dark";
+    themeToggle.textContent = currentTheme;
+  }); 
+});

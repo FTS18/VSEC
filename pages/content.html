@@ -1,46 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>VSEC | N Block</title>
-        <meta name="description" content>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="../assets/css/style.css">
+        <title>VSEC | PDFs</title>
     </head>
-    <body>
+    <body id="syllabus" class="light-theme">
+        <div id="themeToggle" class="darkmd">Dark</div>
+        <div class="loading-screen">
+            <div class="barr"></div>
+            <div class="barr"></div>
+            <div class="barr"></div>
+            <div class="barr"></div>
+        </div>
         <header>
             <nav>
                 <div class="nav-container">
-                    <a href="https://fts18.github.io/VSEC/index.html" class="logo">
-                        <img src="../assets/img/vsec.gif" alt>
-                        <h1>Dr Virendra Swarup Education Centre</h1>
-                    </a>
-                    <ul class="menu-list">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../index.html#about">About</a></li>
-                        <li><a href="#syllabus">Syllabus</a></li>
-                        <li><a href="../index.html#gallery">Gallery</a></li>
-                        <li><a href="https://fts18.github.io/VSEC/pages/contact.html">Contact</a></li>
-                        <li><a href="https://www.vsecnblock.com/ccav/">Pay Fee</a></li>
-                    </ul>
-                    <div class="humbarger" onclick="toggleMenu()">
-                        <div class="bar"></div>
-                        <div class="bar2 bar"></div>
-                        <div class="bar"></div>
-                    </div>
                 </div>
             </nav>
         </header>
         <div class="banner">
             <img src="../assets/img/1.webp" alt>
-            <marquee class="notice-slide" direction="ltr">VSEF was established in Kanpur in memory of Dr. Virendra Swarup, an esteemed educational leader and parliamentarian. Dr. Swarup's significant contributions to education are evident as he played a pivotal role in establishing over 25 educational institutions across Uttar Pradesh through the 'Dayanand Shiksha Sansthan,' where he served as Head and Kuladhipati.
-                These institutions include two Post-Graduate Colleges, a Women's Training College, and two Intermediate Colleges in Dehradun. In Kanpur, a cosmopolitan city, a dozen Post-Graduate Colleges, catering to both boys and girls, as well as several Intermediate Colleges serve the public's educational needs. Additionally, there are Post-Graduate and Intermediate Colleges in Unnao and Bachrawan, Raibarieli district.</marquee>
+            <marquee class="notice-slide" direction="ltr">VSEF was established
+                in Kanpur in memory of Dr. Virendra Swarup, an esteemed
+                educational leader and parliamentarian. Dr. Swarup's significant
+                contributions to education are evident as he played a pivotal
+                role in establishing over 25 educational institutions across
+                Uttar Pradesh through the 'Dayanand Shiksha Sansthan,' where he
+                served as Head and Kuladhipati.
+                These institutions include two Post-Graduate Colleges, a Women's
+                Training College, and two Intermediate Colleges in Dehradun. In
+                Kanpur, a cosmopolitan city, a dozen Post-Graduate Colleges,
+                catering to both boys and girls, as well as several Intermediate
+                Colleges serve the public's educational needs. Additionally,
+                there are Post-Graduate and Intermediate Colleges in Unnao and
+                Bachrawan, Raibarieli district.</marquee>
             <div class="page-head">
                 <div class="links">
                     <a href="../index.html" class="link">Home</a>
@@ -56,29 +48,6 @@
             </div>
         </div>
         <div class="sidebar">
-            <div class="search-wrapper">
-                <input class="searchbox" placeholder="Search here..."
-                    type="search">
-                <div class="results"></div>
-            </div>
-            <div class="content-wrapper">
-                <a href="#holiday-homework" class="card top lt">
-                    <img src="../assets/icons/hhw.png" alt>
-                    <div class="card-text">Holiday HW</div>
-                </a>
-                <a href="#notices" class="card top rt">
-                    <img src="../assets/icons/trending1.png" alt>
-                    <div class="card-text">Notices</div>
-                </a>
-                <a href="#syllabus" class="card bot lt">
-                    <img src="../assets/icons/syllabus.png" alt>
-                    <div class="card-text">Syllabus</div>
-                </a>
-                <a href="https://www.vsecnblock.com/ccav/" class="card bot rt">
-                    <img src="../assets/icons/pay.png" alt>
-                    <div class="card-text">Pay Fees</div>
-                </a>
-            </div>
         </div>
         <main>
             <section class="info last" id="syllabus">
@@ -118,13 +87,16 @@
                             <option value>Select Month</option>
                         </select>
                     </div>
-
                     <div id="pdfViewer">
-                        <a href="#" class="pdf-link disabled">Download</a>
+                        <a href="#" class="pdf-link disabled" id="downloadLink">Download</a>
+                        <a href="#" id="printButton" class="pdf-link disabled">Print</a>
                     </div>
+
                 </div>
             </section><footer id="copyright">Copyright © 2023, Ananay Dubey</footer>
         </main>
         <script src="../assets/js/app.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
     </body>
 </html>
