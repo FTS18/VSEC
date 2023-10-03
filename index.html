@@ -101,22 +101,15 @@
                 <div class="gallery more-info" id="image-container">
 
                 </div>
-                <p>Visitor Count: <span id="viewer-count">Loading...</span></p>
+                <div class="count">Visitors Counter:
+                <img src="https://www.cutercounter.com/hits.php?id=hexokxox&nd=6&style=43" border="0" alt="Hit Counter">
+                </div>
             </section>
 
-            <footer id="copyright">Copyright © 2023, Ananay Dubey
-                <p>Visitor Count: <span id="viewer-count">Loading...</span></p></footer>
+            <footer id="copyright">Copyright © 2023, Ananay Dubey</footer>
         </main>
         <script src="assets/js/app.js"></script>
-        <script>
-            fetch("/.netlify/functions/viewerCount")
-              .then((response) => response.json())
-              .then((data) => {
-                const viewerCount = data.count;
-                document.getElementById("viewer-count").textContent = viewerCount;
-              })
-              .catch((error) => console.error("Error fetching viewer count:", error));
-            </script>
+        <script></script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
     </body>

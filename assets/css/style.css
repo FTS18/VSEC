@@ -1067,3 +1067,16 @@ footer {
     border-radius: 50%;
   }
 }
+.count{
+  position: relative;
+  top: 2rem;
+  width:auto;
+  height: auto;
+  font-size: 15px;
+  padding: 10px;
+}
+.count img{
+  width: 70px;
+  height: 100%;
+  object-fit: cover;
+}
