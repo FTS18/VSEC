@@ -1,8 +1,16 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html dir=ltr lang=en>
+    <head><meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet">
         <title>VSEC | N Block</title>
-        <script src=" https://code.jquery.com/jquery-3.6.4.min.js"></script>
     </head>
     <body id="home" class="light-theme">
         <div id="themeToggle" class="darkmd">Dark</div>
@@ -102,14 +110,31 @@
 
                 </div>
                 <div class="count">Visitors Counter:
-                <img src="https://www.cutercounter.com/hits.php?id=hexokxox&nd=6&style=43" border="0" alt="Hit Counter">
+                <img loading="lazy" src="https://www.cutercounter.com/hits.php?id=hexokxox&nd=6&style=43" border="0" alt="Hit Counter">
                 </div>
             </section>
 
             <footer id="copyright">Copyright © 2023, Ananay Dubey</footer>
         </main>
         <script src="assets/js/app.js"></script>
-        <script></script>
+        <script>
+            const imageContainer = document.getElementById("image-container");
+            fetch("gallery.json")
+              .then(response => response.json())
+              .then(data => {
+                data.forEach(item => {
+                  const imgElement = document.createElement("img");
+                  imgElement.src = item.src;
+                  imgElement.alt = item.alt;
+                  const itemDiv = document.createElement("div");
+                  itemDiv.classList.add("item");
+                  itemDiv.appendChild(imgElement);
+                  imageContainer.appendChild(itemDiv);
+                });
+              })
+              .catch(error => {
+                console.error("Error fetching gallery data:", error);
+              });</script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
     </body>
