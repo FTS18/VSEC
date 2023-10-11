@@ -1,10 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  font-display: swap
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: 'Space Grotesk', sans-serif
+}
+
 body.dark-theme,
 body.light-theme {
-  --secondary-accent: #00ff67;
+  --secondary-accent: #009e3f;
   --bg-blue: #050013b2;
   --p-link: #fc7303;
   --m-background: #fc3903;
   --p-border: #333
+}
+
+body.dark-theme {
+  --bg-primary: #000;
+  --bg-secondary: #161616;
+  --bg-tertiary: #0f0f0f;
+  --bg-quaternary: #1d1d1dc9;
+  --text-color: #eee;
+  --primary-accent: #fc3903;
+  --menu-hover-background: #090011;
+  --t-grey: #181818b7;
+  --button-border: #3c3c3c;
+  --s-text: #333;
+  --scrollbar: #1d1d1d
+}
+
+body.light-theme {
+  --bg-primary: #fff;
+  --bg-secondary: #e7e7e7ce;
+  --bg-tertiary: #f1f1f1;
+  --bg-quaternary: #afafaf94;
+  --bg-5: #f0f0f0a2;
+  --text-color: #181818;
+  --primary-accent: #00ff67;
+  --menu-hover-background: #050013;
+  --t-grey: #9b9b9bb7;
+  --button-border: #e4e4e4e1;
+  --s-text: #bbbbbb;
+  --scrollbar: #aaaaaade
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background: var(--bg-secondary)
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, .7)
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar);
+  border: 3px solid var(--bg-tertiary);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px
 }
 
 .barr,
@@ -16,6 +83,11 @@ header {
 .notice-slide,
 .title {
   backdrop-filter: blur(15px)
+}
+
+.link,
+nav {
+  backdrop-filter: blur(150px)
 }
 
 .card,
@@ -74,73 +146,6 @@ footer {
   object-fit: cover
 }
 
-body.dark-theme {
-  --bg-primary: #000;
-  --bg-secondary: #161616;
-  --bg-tertiary: #0f0f0f;
-  --bg-quaternary: #1d1d1dc9;
-  --text-color: #eee;
-  --primary-accent: #fc3903;
-  --menu-hover-background: #090011;
-  --t-grey: #181818b7;
-  --button-border: #3c3c3c;
-  --s-text: #333;
-  --scrollbar: #1d1d1d
-}
-
-body.light-theme {
-  --bg-primary: #fff;
-  --bg-secondary: #e7e7e7ce;
-  --bg-tertiary: #f1f1f1;
-  --bg-quaternary: #afafaf94;
-  --bg-5: #f0f0f0a2;
-  --text-color: #181818;
-  --primary-accent: #00ff67;
-  --menu-hover-background: #050013;
-  --t-grey: #9b9b9bb7;
-  --button-border: #e4e4e4e1;
-  --s-text: #bbbbbb;
-  --scrollbar: #aaaaaade
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-  font-display: swap
-}
-
-html {
-  scroll-behavior: smooth
-}
-
-body {
-  width: 100%;
-  overflow-x: hidden;
-  font-size: 16px;
-  font-family: 'Space Grotesk', sans-serif
-}
-
-body::-webkit-scrollbar {
-  width: 12px;
-  background: var(--bg-secondary)
-}
-
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 0 rgba(0, 0, 0, .7)
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar);
-  border: 3px solid var(--bg-tertiary);
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px
-}
-
 .darkmd,
 .menu-list a.active {
   color: var(--bg-secondary);
@@ -189,7 +194,6 @@ header {
 
 nav {
   background: var(--bg-5);
-  backdrop-filter: blur(150px);
   border-bottom: .5px solid var(--s-text)
 }
 
@@ -206,6 +210,11 @@ nav {
   left: 0;
   position: relative;
   top: 0
+}
+
+.banner,
+.title {
+  position: fixed
 }
 
 .logo {
@@ -285,12 +294,12 @@ footer {
   line-height: 70px
 }
 
+.link:hover,
 .menu-list li a:hover {
   color: var(--primary-accent)
 }
 
 .banner {
-  position: fixed;
   top: 70px;
   left: 0;
   width: 77%;
@@ -311,7 +320,6 @@ footer {
 }
 
 .title {
-  position: fixed;
   top: 30vh;
   left: 5%;
   width: 30rem;
@@ -341,37 +349,37 @@ footer {
 
 .links {
   position: absolute;
-  top: 49.5vh;
+  top: 48.5vh;
   left: 6.5%;
-  width: 45.5%;
-  height: 40px;
-  padding: 0
+  width: 30rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5px
 }
 
 .link {
   text-align: center;
-  width: 25%;
-  padding: 10px 0;
-  border-right: 1.5px solid var(--text-color);
+  width: 100%;
+  padding: auto 0;
+  height: 3.5rem;
   color: #fff;
   font-size: 12px;
   background: var(--bg-blue);
-  backdrop-filter: blur(150px);
-  line-height: 20px
+  line-height: 3.5rem
+}
+
+.dk {
+  width: 0;
+  height: 0;
+  display: none
 }
 
 .card,
 footer,
 main {
   color: var(--text-color)
-}
-
-.link:last-child {
-  border-right: 0
-}
-
-.link:hover {
-  color: #00ff67
 }
 
 .sidebar {
@@ -399,6 +407,12 @@ main {
   flex-direction: column
 }
 
+.item img,
+footer {
+  position: absolute;
+  left: 0
+}
+
 .card {
   flex-grow: 1;
   width: 100%;
@@ -415,6 +429,15 @@ main {
   padding: 0;
   position: absolute;
   left: 0
+}
+
+.info-title,
+.item,
+.left,
+.pdf-link,
+.right,
+main {
+  position: relative
 }
 
 .card span {
@@ -451,7 +474,6 @@ footer {
 }
 
 main {
-  position: relative;
   top: 110vh;
   padding: 40px 40px 5rem;
   left: 0;
@@ -468,8 +490,7 @@ main {
 
 .left,
 .right {
-  top: -4rem;
-  position: relative
+  top: -4rem
 }
 
 .about.contactus {
@@ -499,6 +520,14 @@ main {
   margin-bottom: 80px
 }
 
+.gallery,
+.item,
+.item img,
+.pdf-link,
+footer {
+  width: 100%
+}
+
 .info-title,
 .more-info {
   height: fit-content;
@@ -513,7 +542,6 @@ main {
 }
 
 .info-title {
-  position: relative;
   font-size: 2.75rem;
   font-weight: 900;
   margin-bottom: 2rem;
@@ -607,8 +635,6 @@ span {
   display: block;
   top: 10px;
   left: -8px;
-  width: 100%;
-  position: relative;
   font-size: 16px;
   background-color: #d8d8d8;
   border: 1px solid #ccc;
@@ -624,8 +650,7 @@ span {
   grid-template-columns: repeat(auto-fit, minmax(30%, 2fr));
   gap: 20px;
   max-width: 1200px;
-  padding: 20px;
-  width: 100%
+  padding: 20px
 }
 
 .last {
@@ -633,20 +658,15 @@ span {
 }
 
 .item {
-  width: 100%;
   height: 0;
   padding-top: 100%;
-  position: relative;
   border-radius: 8px;
   border: 1px solid #555;
   box-shadow: 0 0 5px rgba(0, 0, 0, .2)
 }
 
 .item img {
-  position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
   transition: transform .3s
 }
@@ -656,11 +676,8 @@ span {
 }
 
 footer {
-  width: 100%;
   height: 100px;
-  position: absolute;
   bottom: 0;
-  left: 0;
   align-items: center;
   justify-content: center;
   font-weight: 500;
@@ -674,6 +691,10 @@ footer {
 
   main {
     width: 75%
+  }
+
+  .dk {
+    display: none
   }
 
   .more-info {
@@ -693,14 +714,20 @@ footer {
 
 @media only screen and (max-width:767px) {
 
+  .link,
+  .menu-list {
+    text-align: center;
+  }
+
+  .link:hover,
+  .menu-list a.active,
+  .menu-list li a:hover {
+    color: var(--primary-accent)
+  }
+
   .left,
   .right {
     position: absolute
-  }
-
-  .link,
-  .menu-list {
-    text-align: center
   }
 
   .link,
@@ -780,10 +807,10 @@ footer {
   }
 
   .menu-list a.active {
-    background: #00000000;
-    color: var(--primary-accent)
+    background: #00000000
   }
 
+  .dk,
   .humbarger,
   .menu-list li {
     display: block
@@ -801,7 +828,6 @@ footer {
   }
 
   .menu-list li a:hover {
-    color: var(--primary-accent);
     margin-top: 40px;
     transform: scale(1.2);
     padding: 10px;
@@ -820,7 +846,7 @@ footer {
   .links,
   .title {
     left: 0;
-    position: absolute
+    position: absolute;grid-gap: 0;
   }
 
   .title {
@@ -839,6 +865,13 @@ footer {
     border: 0
   }
 
+  .link {
+    height: 40px;
+    border-right: 1.5px solid var(--text-color);
+    background: var(--bg-blue);
+    backdrop-filter: blur(150px)
+  }
+
   .links {
     top: 0;
     width: 100%;
@@ -847,7 +880,7 @@ footer {
     padding: 5px;
     display: flex;
     align-items: center;
-    background: var(--bg-primary);
+    background: var(--bg-tertiary);
     border-bottom: .8px solid var(--primary-accent);
     white-space: nowrap;
     -ms-overflow-style: none;
@@ -869,6 +902,10 @@ footer {
     margin-right: 4px;
     margin-left: 4px
   }
+  .link.active{
+    color: var(--primary-accent);
+    background: var(--text-color);  
+  }
 
   .c-desc,
   .more-info {
@@ -888,7 +925,6 @@ footer {
 
   .link:hover {
     background: var(--text-color);
-    color: #00ff67;
     border: 1px solid var(--text-color)
   }
 

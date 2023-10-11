@@ -2,24 +2,43 @@
 <html dir=ltr lang=en>
     <head><meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="">
+        <meta name="description" content>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="assets/css/style.css">
         <link
             href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-            rel="stylesheet">
+            rel="stylesheet"><link rel="apple-touch-icon" sizes="180x180"
+            href="/assets/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="/assets/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16"
+            href="/assets/icons/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="192x192"
+            href="/assets/icons/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="384x384"
+            href="/assets/icons/android-chrome-384x384.png">
+        <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg"
+            color="#5bbad5">
+        <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+        <meta name="apple-mobile-web-app-title" content="VSEC">
+        <meta name="application-name" content="VSEC">
+        <meta name="msapplication-TileColor" content="#1e0023">
+        <meta name="theme-color" content="#000000">
+        <link rel="manifest" href="/manifest.json">
         <title>VSEC | N Block</title>
     </head>
     <body id="home" class="light-theme">
         <div id="themeToggle" class="darkmd">Dark</div>
-        <div class="loading-screen">
+        <!--<div class="loading-screen">
             <div class="barr"></div>
             <div class="barr"></div>
             <div class="barr"></div>
             <div class="barr"></div>
         </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>-->
         <header>
             <nav>
                 <div class="nav-container"></div>
@@ -46,15 +65,15 @@
                         class="link"> Fee Refund (21-23)</a>
                     <a
                         href="/pages/content.html#syllabus"
-                        class="link">Syllabus</a>
+                        class="link dk">Syllabus</a>
                     <a
                         href="/pages/content.html#holiday-homework"
-                        class="link">HHW</a>
-                    <a href="#notices" class="link">Notices</a>
+                        class="link dk">HHW</a>
+                    <a href="#notices" class="link dk">Notices</a>
                     <a
                         href="/pages/content.html#syllabus"
                         class="link">Datesheet</a>
-                    <a href="https://www.vsecnblock.com/ccav/" class="link">Pay
+                    <a href="https://www.vsecnblock.com/ccav/" class="link dk">Pay
                         Fee</a>
                     <a href="#timings" class="link">Timings</a>
                 </div>
@@ -66,7 +85,7 @@
         <div class="sidebar"></div>
         <main>
             <section class="info">
-                <div class="info-title" id="about">About Us:</div>
+                <div class="info-title" id="about">About Us</div>
                 <div class="more-info">
                     <div class="info-desc">At <span>Dr. VSEC</span>, we provide
                         holistic, values-based education, nurturing each child's
@@ -95,7 +114,7 @@
                 </div>
             </section>
             <section class="timings" id="timings">
-                <div class="info-title">Timings:</div>
+                <div class="info-title">Timings</div>
                 <div class="more-info">
                     <div class="timing">
                         <div class="juniors">I-X: <span class="time">7:30-14:00</span></div>
@@ -110,14 +129,34 @@
 
                 </div>
                 <div class="count">Visitors Counter:
-                <img loading="lazy" src="https://www.cutercounter.com/hits.php?id=hexokxox&nd=6&style=43" border="0" alt="Hit Counter">
+                    <img loading="lazy"
+                        src="https://www.cutercounter.com/hits.php?id=hexokxox&nd=6&style=43"
+                        border="0" alt="Hit Counter">
                 </div>
             </section>
 
             <footer id="copyright">Copyright © 2023, Ananay Dubey</footer>
         </main>
+        <button id="install-button" style="display: none;">Install App</button>
         <script src="assets/js/app.js"></script>
         <script>
+            if ('serviceWorker' in navigator && 'PushManager' in window) {
+              window.addEventListener('beforeinstallprompt', function (event) {
+                event.preventDefault(); // Prevent the browser's default install prompt
+                document.getElementById('install-button').style.display = 'block';
+          
+                document.getElementById('install-button').addEventListener('click', function () {
+                  event.prompt();
+                  event.userChoice.then(function (choiceResult) {
+                    if (choiceResult.outcome === 'accepted') {
+                      console.log('User accepted the install prompt');
+                    } else {
+                      console.log('User dismissed the install prompt');
+                    }
+                  });
+                });
+              });
+            }
             const imageContainer = document.getElementById("image-container");
             fetch("gallery.json")
               .then(response => response.json())
@@ -134,8 +173,18 @@
               })
               .catch(error => {
                 console.error("Error fetching gallery data:", error);
-              });</script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+              });
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js')
+        .then(function (registration) {
+          console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch(function (error) {
+          console.error('Service Worker registration failed:', error);
+        });
+    });
+  }
+  </script>
     </body>
 </html>

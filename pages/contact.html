@@ -71,7 +71,15 @@
             </section>
         </main>
         <script src="../assets/js/app.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>        <script>
+            gsap.to(".barr", 1.15, {
+              delay: 0.35,
+              height: 0,
+              stagger: {
+                amount: 0.4,
+              }, ease: "power1.inOut",
+            })</script>
               
     </body>
 </html>

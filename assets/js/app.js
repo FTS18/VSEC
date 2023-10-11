@@ -24,14 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   const currentYear = new Date().getFullYear();
   const footer = document.getElementById('copyright');
-  footer.textContent = `Copyright © ${currentYear}, Ananay Dubey`;
-  gsap.to(".barr", 1.15, {
-    delay: 0.35,
-    height: 0,
-    stagger: {
-      amount: 0.4,
-    }, ease: "power1.inOut",
-  })
+  footer.textContent = `Copyright © ${currentYear}, Dr. Virendra Swarup Education Centre`;
+
   const themeToggle = document.getElementById("themeToggle");
   const body = document.body;
   themeToggle.addEventListener("click", function () {
@@ -47,4 +41,4 @@ document.addEventListener("DOMContentLoaded", function () {
       img.removeAttribute("loading");
     });
   });
-});
+});  

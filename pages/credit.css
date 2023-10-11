@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.credit-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.creditt {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 21rem;
+    max-width: 25rem;
+    height: 60%;
+    background: var(--bg-quaternary);
+    backdrop-filter: blur(30px);
+    border-radius: 30px;
+    border: 2px solid #85858565;
+    text-align: center; /* Center text */
+    padding: 3rem;
+    font-weight: 900;
+}
+
+footer {
+    display: none;
+}
+
+.darkmd {
+    font-family: sans-serif;
+    text-align: center; /* Center text */
+}
+
+.ctitle {
+    font-size: 7vw; /* Responsive font size in viewport units */
+    opacity: 0.8;
+    text-align: center; /* Center text */
+    font-family: 'Squada One', cursive;
+}
+
+.name, .class {
+    font-size: 1.69vw; /* Responsive font size in viewport units */
+    letter-spacing: 0.178rem;
+    opacity: 0.4;
+    text-align: center; /* Center text */
+}
+
+.class {
+    font-weight: bold;
+    font-size: 4.7vw; /* Responsive font size in viewport units */
+    text-align: center; /* Center text */
+}
+
+* {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.creditt {
+    width: 80%;
+    max-width: 20rem;
+}
+
+.ctitle {
+    font-size: 4.6vw; /* Responsive font size in viewport units */
+}
+
+.name {
+    font-size: 1vw; /* Responsive font size in viewport units */
+    font-style: italic;
+}
+
+.class {
+    font-size: 2.8vw; /* Responsive font size in viewport units */
+}
+
+.pbtn {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: #99999981;
+    border-radius: 30px;
+    position: relative;
+    top: 2vh; /* Responsive position in viewport units */
+    display: inline-block;
+    margin: 2.5vh 0; /* Responsive margin in viewport units */
+    text-align: center; /* Center text */
+    width: 80%; /* Responsive width in viewport units */
+    height: 8vh;
+    line-height: 8vh;
+    border: 2px solid #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.sociall {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.fa {
+    padding: 15px;
+    width: 100%;
+    font-size: 4vw; /* Responsive font size in viewport units */
+    text-align: center; /* Center text */
+    text-decoration: none;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-youtube-play {
+    background: #ff0022;
+    border-bottom-left-radius: 28px;
+}
+
+.fa-twitter {
+    background: #00d9ff;
+}
+
+.fa-linkedin {
+    background: #4054ac;
+}
+
+.fa-github {
+    background: #242424;
+    border-bottom-right-radius: 28px;
+}
+
+.fa-instagram {
+    background: #ff004c;
+}
+
+.fa-mail-forward {
+    background: #ff9100;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .creditt {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        border-radius: 0;
+        padding: 25%;
+        padding-top: 30vh;
+    }
+
+    .ctitle {
+    font-size: 15vw;
+    }
+
+    .name {
+        font-size:3.5vw; /* Responsive font size in viewport units */
+        font-style: italic;
+    }
+
+    .class {
+        font-size: 9.4vw; /* Responsive font size in viewport units */
+    }
+.darkmd{
+    top: 5vh;
+    height: 2.6rem;
+}
+    .sociall {
+        position: fixed;
+        bottom: 0vh;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 100vw;
+        text-align: center;
+    }
+
+    .fa {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height:30vw;
+        font-size: 4vw; /* Responsive font size in viewport units */
+    }
+    .fa-youtube-play,.fa-github{
+        border-radius: 0;
+    }
+    .pbtn {
+        position: relative;
+        top: 8vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; /* Center text */
+        width: 100%; /* Responsive width in viewport units */
+        font-size: 3vw; /* Responsive font size in viewport units */
+    }
+}
